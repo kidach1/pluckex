@@ -1,5 +1,5 @@
 require "pluckex/version"
+require "pluckex/active_record/relation/calculations"
 
 module Pluckex
-  # Your code goes here...
 end
