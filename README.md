@@ -1,6 +1,23 @@
 # Pluckex
 
-TODO: Write a gem description
+Pluckex add pluck-extended methods.
+
+[ActiveRecord::Caluculations#pluck](http://api.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck).
+
+Like this.
+
+### pluck_tied_by_id
+
+```
+      #   Person.pluck_tied_by_id(:name)
+      #   # => {1=>'David', 2=>'Jeremy', 3=>'Jose'}
+```
+### pluck_with_keys
+
+```
+      #   Person.pluck_with_keys(:id, :name)
+      #   # => [{:id=>1, :name=>'David'}, {:id=>2, :name=>'Jeremy'}, {:id=>3, :name=>'Jose'}]
+```
 
 ## Installation
 
@@ -17,10 +34,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install pluckex
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
