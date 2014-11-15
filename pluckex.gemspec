@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daiki Taniguchi"]
   spec.email         = ["daiki.taniguchi@aktsk.jp"]
   spec.summary       = %q{Pluckex.}
-  spec.description   = %q{Pluckex!}
+  spec.description   = %q{extend pluck. https://github.com/kidach1/pluckex}
   spec.homepage      = ""
   spec.license       = "MIT"
 
