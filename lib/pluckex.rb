@@ -1,5 +1,5 @@
 require "pluckex/version"
-require "pluckex/active_record/relation/calculations"
+require "pluckex/calculations"
+require 'active_record'
 
-module Pluckex
-end
+ActiveRecord::Base.extend Pluckex::Calculations
