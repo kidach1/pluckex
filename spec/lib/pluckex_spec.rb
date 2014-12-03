@@ -12,6 +12,15 @@ describe Pluckex do
         )
       end
     end
+    describe 'pluck_tied_by_id' do
+      subject { Person.pluck_tied_by_id(:name, :age) }
+      it do
+        expect(subject).to eq(
+          people.first.id => { :name => people.first.name, :age => people.first.age },
+          people.second.id =>{ :name => people.second.name, :age => people.second.age },
+        )
+      end
+    end
     describe 'pluck_with_keys' do
       subject { Person.pluck_with_keys(:id, :name) }
       it do
