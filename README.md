@@ -8,21 +8,25 @@ Like this.
 
 ### pluck_tied_by_id
 
+#### one arg case:
+
+```ruby
+Person.pluck_tied_by_id(:name)
+# => {1=>'David', 2=>'Jeremy', 3=>'Jose'}
 ```
-    # one arg case:
-    #   Person.pluck_tied_by_id(:name)
-    #     # => {1=>'David', 2=>'Jeremy', 3=>'Jose'}
-    #
-    # multiple args case:
-    #   Person.pluck_tied_by_id(:name, :age)
-    #     # => {1=>{:name=>"David", :age=>25}, 2=>{:name=>"Jeremy", :age=>27}}
+
+#### multiple args case:
+
+```ruby
+Person.pluck_tied_by_id(:name, :age)
+# => {1=>{:name=>"David", :age=>25}, 2=>{:name=>"Jeremy", :age=>27}}
 
 ```
 ### pluck_with_keys
 
-```
-      #   Person.pluck_with_keys(:id, :name)
-      #   # => [{:id=>1, :name=>'David'}, {:id=>2, :name=>'Jeremy'}, {:id=>3, :name=>'Jose'}]
+```ruby
+Person.pluck_with_keys(:id, :name)
+# => [{:id=>1, :name=>'David'}, {:id=>2, :name=>'Jeremy'}, {:id=>3, :name=>'Jose'}]
 ```
 
 ## Installation
